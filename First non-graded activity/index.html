@@ -7,6 +7,7 @@
         <title>Lorens Web Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -25,7 +26,7 @@
           </div>
 
         <div class="header">
-            <a href="#default" class="logo">JOHN LAURENCE CASTILLO</a>
+            <a href="#default" class="logo">JOHN LAURENCE CASTILLO <div id="mydiv" style="display:none;">Hover the boxes to see more about me!</div></a>
             <div class="header-right">
               <a class="active" href="#home">SIMPLE PORTFOLIO</a>
             </div>
@@ -74,20 +75,43 @@
                 </div>
               </div>
 
-              <div class="flip-box">
+              <div class="flip-box" id="testimonials" style="display:none ;">
                 <div class="flip-box-inner">
                   <div class="flip-box-front">
-                    <p>Hobbies</p>
+                    <p>Testimonials</p>
                   </div>
                   <div class="flip-box-back">
-                    <h2>I love...</h2>
-                    <p>Playing online games, Watching Movies and Series like Kdramas, Netflix, Marvels etc.</p>
-                    <p>I love eating delicious food, i drink a lot of coffee and I am a happy go lucky person.</p>
-                    <p>YOU</p>
+                    <h2>Random Comments</h2>
+                    <p>He is really good looking!.</p>
+                    <p>I love you laurence!!!.</p>
+                    <p>How to be you po?</p>
                   </div>
                 </div>
               </div>
+              
         </div></center>
         
+        
     </body>
+
+    <script>
+    $(document).ready(function(){
+        $(".ako").hover(function(){
+        $("#mydiv").fadeIn(3000);
+
+       });
+    });
+
+      $( ".ako" ).on( "click", function( event ) {
+      $("#testimonials").show();
+          });
+
+      $(document).ready(function(){
+      $("img").dblclick(function(){
+      window.open("https://www.facebook.com/lauwiiieeee");
+        });
+      });
+
+    </script>
+    
 </html>
